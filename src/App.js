@@ -12,7 +12,6 @@ import React, {useState} from "react";
 // sahteVeri'yi import edin
 import "./App.css";
 import Posts from "./bilesenler/Gonderiler/Gonderiler"
-import ac from "./bilesenler/AramaCubugu/AramaCubugu"
 import sahteVeri from "./sahte-veri"  
 import AramaCubugu from "./bilesenler/AramaCubugu/AramaCubugu";
 const App = () => {
@@ -36,6 +35,7 @@ setaramaCubuguInput(text)
     <div className="App">
       <AramaCubugu />
       <Posts acquiredData ={gonderiNesneDizisi}/>
+
       {/* AramaÇubuğu ve Gönderiler'i render etmesi için buraya ekleyin */}
       {/* Her bileşenin hangi proplara ihtiyaç duyduğunu kontrol edin, eğer ihtiyaç varsa ekleyin! */}
     </div>
